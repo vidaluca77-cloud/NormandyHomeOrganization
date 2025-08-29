@@ -1,4 +1,5 @@
 import React from 'react';
+import { Link } from 'react-router-dom';
 
 export default function Footer() {
   return (
@@ -131,12 +132,12 @@ export default function Footer() {
                 marginBottom: '1rem'
               }}>
                 <span style={{fontSize: '1.2rem'}}>📞</span>
-                <a href="#contact" style={{
+                <Link to="/contact" style={{
                   color: 'var(--color-accent-light)',
                   textDecoration: 'none'
                 }}>
                   Demander un devis
-                </a>
+                </Link>
               </div>
               
               <div style={{
