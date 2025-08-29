@@ -5,8 +5,17 @@ export default function ContactForm() {
 
   function handleSubmit(e) {
     e.preventDefault();
-    setSent(true);
-    // Ici tu peux intégrer une solution type Netlify Forms, EmailJS, ou autre.
+    
+    const form = e.target;
+    const formData = new FormData(form);
+    
+    fetch('/', {
+      method: 'POST',
+      headers: { 'Content-Type': 'application/x-www-form-urlencoded' },
+      body: new URLSearchParams(formData).toString(),
+    })
+    .then(() => setSent(true))
+    .catch((error) => console.error('Error:', error));
   }
 
   return (
@@ -20,8 +29,9 @@ export default function ContactForm() {
       }}>
         <h2 style={{marginBottom:'1rem'}}>Demande de devis / Contact</h2>
         {!sent ? (
-          <form onSubmit={handleSubmit} name="contact" method="POST" data-netlify="true">
+          <form onSubmit={handleSubmit} name="contact" method="POST" netlify>
             <input type="hidden" name="form-name" value="contact" />
+            <input type="hidden" name="bot-field" style={{display: 'none'}} />
             <div style={{marginBottom:'1.2rem'}}>
               <label>Nom :</label>
               <input type="text" name="nom" required style={{width:'100%', padding:'0.7em', borderRadius:'var(--border-radius)', border:'1px solid #ccc', marginTop:'0.3em'}}/>
