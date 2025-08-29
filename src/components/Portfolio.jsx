@@ -132,14 +132,24 @@ export default function Portfolio() {
                       overflow: 'hidden',
                       boxShadow: 'var(--shadow-md)',
                       aspectRatio: '4/3',
-                      background: 'linear-gradient(135deg, #fca5a5 0%, #f87171 100%)',
-                      display: 'flex',
-                      alignItems: 'center',
-                      justifyContent: 'center',
-                      color: 'white',
-                      fontSize: '2rem'
+                      backgroundImage: `url(${work.before})`,
+                      backgroundSize: 'cover',
+                      backgroundPosition: 'center',
+                      position: 'relative'
                     }}>
-                      📦
+                      <div style={{
+                        position: 'absolute',
+                        top: '0.5rem',
+                        left: '0.5rem',
+                        background: 'rgba(239, 68, 68, 0.9)',
+                        color: 'white',
+                        padding: '0.25rem 0.75rem',
+                        borderRadius: '12px',
+                        fontSize: '0.75rem',
+                        fontWeight: 600
+                      }}>
+                        ❌ Avant
+                      </div>
                     </div>
                   </div>
                   
@@ -161,14 +171,24 @@ export default function Portfolio() {
                       overflow: 'hidden',
                       boxShadow: 'var(--shadow-md)',
                       aspectRatio: '4/3',
-                      background: 'linear-gradient(135deg, #86efac 0%, #4ade80 100%)',
-                      display: 'flex',
-                      alignItems: 'center',
-                      justifyContent: 'center',
-                      color: 'white',
-                      fontSize: '2rem'
+                      backgroundImage: `url(${work.after})`,
+                      backgroundSize: 'cover',
+                      backgroundPosition: 'center',
+                      position: 'relative'
                     }}>
-                      ✨
+                      <div style={{
+                        position: 'absolute',
+                        top: '0.5rem',
+                        right: '0.5rem',
+                        background: 'rgba(34, 197, 94, 0.9)',
+                        color: 'white',
+                        padding: '0.25rem 0.75rem',
+                        borderRadius: '12px',
+                        fontSize: '0.75rem',
+                        fontWeight: 600
+                      }}>
+                        ✅ Après
+                      </div>
                     </div>
                   </div>
                 </div>

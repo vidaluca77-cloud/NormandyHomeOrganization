@@ -1,4 +1,5 @@
 import React from 'react';
+import { Link } from 'react-router-dom';
 
 export default function Hero() {
   return (
@@ -76,7 +77,7 @@ export default function Hero() {
             gap: '1rem',
             flexWrap: 'wrap'
           }}>
-            <a href="#contact" style={{textDecoration: 'none'}}>
+            <Link to="/contact" style={{textDecoration: 'none'}}>
               <button style={{
                 background: 'linear-gradient(135deg, #00b894 0%, #00a085 100%)',
                 color: 'white',
@@ -91,9 +92,9 @@ export default function Hero() {
               }}>
                 Recevoir un devis personnalisé
               </button>
-            </a>
+            </Link>
             
-            <a href="#portfolio" style={{
+            <Link to="/portfolio" style={{
               color: 'white',
               padding: '1.25rem 2rem',
               border: '2px solid rgba(255, 255, 255, 0.3)',
@@ -106,7 +107,7 @@ export default function Hero() {
               alignItems: 'center'
             }}>
               Voir le portfolio →
-            </a>
+            </Link>
           </div>
           
           <div style={{
