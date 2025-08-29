@@ -1,3 +1,6 @@
+/* Import modern fonts */
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Playfair+Display:wght@400;500;600;700&display=swap');
+
 :root {
   /* Modern Color Palette */
   --color-bg: linear-gradient(135deg, #f8fafc 0%, #f1f5f9 100%);
@@ -35,9 +38,6 @@
   --transition-base: 250ms ease;
   --transition-slow: 350ms ease;
 }
-
-/* Import modern fonts */
-@import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Playfair+Display:wght@400;500;600;700&display=swap');
 
 body {
   background: var(--color-bg);
