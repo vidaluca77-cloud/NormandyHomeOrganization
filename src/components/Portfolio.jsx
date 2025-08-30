@@ -2,15 +2,15 @@ import React, { useState } from 'react';
 
 const works = [
   {
-    before: '/assets/portfolio/before1.jpg',
-    after: '/assets/portfolio/after1.jpg',
+    before: '/assets/portfolio/before4.jpg',
+    after: '/assets/portfolio/after4.jpg',
     description: 'Transformation d\'un salon encombré en espace lumineux et épuré.',
     title: 'Salon familial',
     category: 'Pièce de vie'
   },
   {
-    before: '/assets/portfolio/before2.jpg',
-    after: '/assets/portfolio/after2.jpg',
+    before: '/assets/portfolio/before5.jpg',
+    after: '/assets/portfolio/after5.jpg',
     description: 'Réorganisation d\'une chambre d\'enfant pour un rangement facile au quotidien.',
     title: 'Chambre d\'enfant',
     category: 'Espace privé'

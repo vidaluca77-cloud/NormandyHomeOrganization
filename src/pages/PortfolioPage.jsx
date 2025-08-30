@@ -8,8 +8,8 @@ export default function PortfolioPage() {
   const portfolioItems = [
     {
       id: 1,
-      before: '/assets/portfolio/before1.jpg',
-      after: '/assets/portfolio/after1.jpg',
+      before: '/assets/portfolio/before4.jpg',
+      after: '/assets/portfolio/after4.jpg',
       title: 'Salon familial moderne',
       category: 'salon',
       description: 'Transformation complète d\'un salon encombré en espace de vie lumineux et fonctionnel.',
@@ -19,8 +19,8 @@ export default function PortfolioPage() {
     },
     {
       id: 2,
-      before: '/assets/portfolio/before2.jpg',
-      after: '/assets/portfolio/after2.jpg',
+      before: '/assets/portfolio/before5.jpg',
+      after: '/assets/portfolio/after5.jpg',
       title: 'Chambre d\'enfant organisée',
       category: 'chambre',
       description: 'Réorganisation d\'une chambre d\'enfant pour favoriser l\'autonomie et le rangement facile.',
