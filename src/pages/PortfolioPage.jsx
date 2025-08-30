@@ -10,78 +10,42 @@ export default function PortfolioPage() {
       id: 1,
       before: '/assets/portfolio/before1.jpg',
       after: '/assets/portfolio/after1.jpg',
-      title: 'Salon familial moderne',
-      category: 'salon',
-      description: 'Transformation complète d\'un salon encombré en espace de vie lumineux et fonctionnel.',
-      details: 'Surface: 25m² • Durée: 2 jours • Budget: 350€',
-      challenges: 'Espace restreint, nombreux objets personnels, manque de rangements',
-      solutions: 'Optimisation verticale, mobilier multifonction, zones définies'
+      title: 'Organisation de garde-manger',
+      category: 'cuisine',
+      description: 'Transformation complète d\'un garde-manger encombré en espace organisé avec système d\'étiquetage efficace.',
+      details: 'Surface: 8m² • Durée: 1 jour • Budget: 180€',
+      challenges: 'Produits éparpillés, dates de péremption perdues, manque de visibilité',
+      solutions: 'Bacs transparents étiquetés, rotation des stocks, groupement par catégories'
     },
     {
       id: 2,
       before: '/assets/portfolio/before2.jpg',
       after: '/assets/portfolio/after2.jpg',
-      title: 'Chambre d\'enfant organisée',
-      category: 'chambre',
-      description: 'Réorganisation d\'une chambre d\'enfant pour favoriser l\'autonomie et le rangement facile.',
-      details: 'Surface: 12m² • Durée: 1 jour • Budget: 200€',
-      challenges: 'Jouets éparpillés, vêtements mélangés, difficulté d\'accès',
-      solutions: 'Bacs de rangement étiquetés, hauteur adaptée, système de rotation'
+      title: 'Transformation de grenier',
+      category: 'bureau',
+      description: 'Réaménagement d\'un grenier de stockage en bureau moderne et fonctionnel.',
+      details: 'Surface: 15m² • Durée: 2 jours • Budget: 420€',
+      challenges: 'Espace sous pente, objets accumulés, manque d\'éclairage',
+      solutions: 'Optimisation de l\'espace, mobilier adapté, éclairage fonctionnel'
     },
     {
       id: 3,
       before: '/assets/portfolio/before3.jpg',
       after: '/assets/portfolio/after3.jpg',
-      title: 'Cuisine familiale optimisée',
-      category: 'cuisine',
-      description: 'Optimisation d\'une cuisine familiale pour une utilisation quotidienne plus fluide.',
-      details: 'Surface: 15m² • Durée: 1,5 jours • Budget: 280€',
-      challenges: 'Ustensiles dispersés, placards surchargés, plan de travail encombré',
-      solutions: 'Zonage par usage, rangements tiroirs, système vertical'
-    },
-    {
-      id: 4,
-      before: '/assets/portfolio/before1.jpg',
-      after: '/assets/portfolio/after1.jpg',
-      title: 'Bureau professionnel',
-      category: 'bureau',
-      description: 'Création d\'un espace de travail productif et organisé dans un bureau à domicile.',
-      details: 'Surface: 10m² • Durée: 1 jour • Budget: 220€',
-      challenges: 'Paperasse accumulée, câbles emmêlés, manque de concentration',
-      solutions: 'Classement efficace, gestion des câbles, zones dédiées'
-    },
-    {
-      id: 5,
-      before: '/assets/portfolio/before2.jpg',
-      after: '/assets/portfolio/after2.jpg',
-      title: 'Dressing sur-mesure',
-      category: 'dressing',
-      description: 'Transformation d\'un dressing chaotique en garde-robe organisée et fonctionnelle.',
-      details: 'Surface: 8m² • Durée: 2 jours • Budget: 320€',
-      challenges: 'Vêtements entassés, saisons mélangées, accessoires perdus',
-      solutions: 'Tri par catégorie, rotation saisonnière, rangements spécialisés'
-    },
-    {
-      id: 6,
-      before: '/assets/portfolio/before3.jpg',
-      after: '/assets/portfolio/after3.jpg',
-      title: 'Salle de bain familiale',
-      category: 'salle-de-bain',
-      description: 'Optimisation d\'une salle de bain familiale pour plus de praticité au quotidien.',
-      details: 'Surface: 6m² • Durée: 0,5 jour • Budget: 150€',
-      challenges: 'Produits éparpillés, serviettes en désordre, espace restreint',
-      solutions: 'Rangements muraux, organisateurs tiroirs, hooks multiples'
+      title: 'Chambre de bébé',
+      category: 'chambre',
+      description: 'Conversion d\'un bureau en chambre de bébé chaleureuse et organisée.',
+      details: 'Surface: 12m² • Durée: 1,5 jours • Budget: 300€',
+      challenges: 'Changement de fonction, sécurité bébé, rangements spécialisés',
+      solutions: 'Aménagement sécurisé, rangements à hauteur, ambiance douce'
     }
   ];
 
   const categories = [
     { id: 'all', name: 'Tous les projets', count: portfolioItems.length },
-    { id: 'salon', name: 'Salons', count: portfolioItems.filter(item => item.category === 'salon').length },
+    { id: 'cuisine', name: 'Cuisines & Garde-manger', count: portfolioItems.filter(item => item.category === 'cuisine').length },
     { id: 'chambre', name: 'Chambres', count: portfolioItems.filter(item => item.category === 'chambre').length },
-    { id: 'cuisine', name: 'Cuisines', count: portfolioItems.filter(item => item.category === 'cuisine').length },
-    { id: 'bureau', name: 'Bureaux', count: portfolioItems.filter(item => item.category === 'bureau').length },
-    { id: 'dressing', name: 'Dressings', count: portfolioItems.filter(item => item.category === 'dressing').length },
-    { id: 'salle-de-bain', name: 'Salles de bain', count: portfolioItems.filter(item => item.category === 'salle-de-bain').length }
+    { id: 'bureau', name: 'Bureaux & Espaces de travail', count: portfolioItems.filter(item => item.category === 'bureau').length }
   ];
 
   const filteredItems = selectedCategory === 'all' 
