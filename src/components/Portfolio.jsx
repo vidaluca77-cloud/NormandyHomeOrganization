@@ -2,25 +2,25 @@ import React, { useState } from 'react';
 
 const works = [
   {
-    before: '/assets/portfolio/before4.jpg',
-    after: '/assets/portfolio/after4.jpg',
-    description: 'Transformation d\'un salon encombré en espace lumineux et épuré.',
-    title: 'Salon familial',
-    category: 'Pièce de vie'
+    before: '/assets/portfolio/before1.jpg',
+    after: '/assets/portfolio/after1.jpg',
+    description: 'Transformation d\'un garde-manger encombré en espace organisé avec système d\'étiquetage.',
+    title: 'Organisation de garde-manger',
+    category: 'Espace fonctionnel'
   },
   {
-    before: '/assets/portfolio/before5.jpg',
-    after: '/assets/portfolio/after5.jpg',
-    description: 'Réorganisation d\'une chambre d\'enfant pour un rangement facile au quotidien.',
-    title: 'Chambre d\'enfant',
-    category: 'Espace privé'
+    before: '/assets/portfolio/before2.jpg',
+    after: '/assets/portfolio/after2.jpg',
+    description: 'Réaménagement d\'un grenier de stockage en bureau moderne et fonctionnel.',
+    title: 'Transformation de grenier',
+    category: 'Espace de travail'
   },
   {
     before: '/assets/portfolio/before3.jpg',
     after: '/assets/portfolio/after3.jpg',
-    description: 'Optimisation d\'une cuisine familiale, chaque chose à sa place !',
-    title: 'Cuisine familiale',
-    category: 'Espace fonctionnel'
+    description: 'Conversion d\'un bureau en chambre de bébé chaleureuse et organisée.',
+    title: 'Chambre de bébé',
+    category: 'Espace privé'
   }
 ];
 
